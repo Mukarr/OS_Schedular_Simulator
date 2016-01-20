@@ -1,0 +1,39 @@
+Uniprocessor OS Scheduling Timeline
+Policy Used: Found Robin
+
+Time : Status of Process
+0 1:RUNNING
+1 1:BLOCKED
+2 1:BLOCKED
+3 1:BLOCKED
+4 1:BLOCKED
+5 1:BLOCKED 2:RUNNING
+6 1:BLOCKED 2:RUNNING 3:READY
+7 1:BLOCKED 2:BLOCKED 3:RUNNING
+8 1:READY 2:BLOCKED 3:RUNNING
+9 1:RUNNING 2:READY 3:READY
+10 0:RUNNING 2:READY 3:READY
+11 0:BLOCKED 2:RUNNING 3:READY
+12 0:BLOCKED 2:RUNNING 3:READY
+13 0:BLOCKED 3:RUNNING
+14 0:BLOCKED 3:RUNNING
+15 0:BLOCKED
+16 0:RUNNING
+Various Parameters to compare different scheduling policies
+
+Finishing time: 16
+Predictability: 4.00
+Throughput: 0.25
+CPU utilization: 0.71
+
+Turnaround time for process 0: 7
+Turnaround time for process 1: 10
+Turnaround time for process 2: 8
+Turnaround time for process 3: 9
+Average Turnaround Time: 8
+
+Reponse time for process 0: 6
+Reponse time for process 1: 9
+Reponse time for process 2: 5
+Reponse time for process 3: 5
+Average Response Time: 6

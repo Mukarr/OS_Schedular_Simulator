@@ -1,0 +1,40 @@
+Uniprocessor OS Scheduling Timeline
+Policy Used: Shortest Ready Job First
+
+Time : Status of Process
+0 1:RUNNING
+1 1:BLOCKED
+2 1:BLOCKED
+3 1:BLOCKED
+4 1:BLOCKED
+5 1:BLOCKED 2:RUNNING
+6 1:BLOCKED 2:RUNNING 3:READY
+7 1:BLOCKED 2:BLOCKED 3:RUNNING
+8 1:RUNNING 2:BLOCKED 3:READY
+9 2:RUNNING 3:READY
+10 0:READY 2:RUNNING 3:READY
+11 0:RUNNING 3:READY
+12 0:BLOCKED 3:RUNNING
+13 0:BLOCKED 3:RUNNING
+14 0:BLOCKED 3:RUNNING
+15 0:BLOCKED
+16 0:BLOCKED
+17 0:RUNNING
+Various Parameters to compare different scheduling policies
+
+Finishing time: 17
+Predictability: 4.25
+Throughput: 0.24
+CPU utilization: 0.67
+
+Turnaround time for process 0: 8
+Turnaround time for process 1: 9
+Turnaround time for process 2: 6
+Turnaround time for process 3: 9
+Average Turnaround Time: 8
+
+Reponse time for process 0: 7
+Reponse time for process 1: 8
+Reponse time for process 2: 3
+Reponse time for process 3: 5
+Average Response Time: 5
